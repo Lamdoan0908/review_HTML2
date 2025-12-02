@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quản lí sản phẩm</title>
+    <link rel="stylesheet" href="hw2.css">
+  </head>
+  <body>
+    <h2>QUẢN LÍ SẢN PHẨM</h2>
+    <form id="form">
+      <label>Tên sản phẩm</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Nhập tên sp"
+        required
+      />
+      <input
+        type="number"
+        id="price"
+        name="price"
+        placeholder="Nhập giá"
+        required
+      />
+      <button type="submit" id="submit">Thêm</button>
+    </form>
+    <table border="1" id="table">
+      <thead>
+        <tr>
+          <th class="STT">STT</th>
+          <th class="Name">Name</th>
+          <th class="Price">Price</th>
+          <th class="Action">Action</th>
+          <!--de them nut xoa-->
+        </tr>
+      </thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+    <script src="hw2.js" defer></script>
+  </body>
+</html>
